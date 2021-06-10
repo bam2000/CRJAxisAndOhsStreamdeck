@@ -20,6 +20,7 @@ I know this Setup is very special, but maybe you can edit your own creation with
 Installation:
 
 Import the CRJ AAO Scripts into AAO using the "CRJ_AxisAndOhsScripts.xml" (scripting --> import scripts)
+
 Import the StreamDeck profile for the CRJ (double click on "CRJ.streamDeckProfile")
 
 Streamdeck Screenshots
