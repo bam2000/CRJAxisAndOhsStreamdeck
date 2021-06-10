@@ -17,13 +17,13 @@ Also Thanks CaptOle, FltsimFlyboy and Guenseli from flightsim.to for some amazin
 
 I know this Setup is very special, but maybe you can edit your own creation with it.
 
-Installation:
+<b>Installation</b>
 
 Import the CRJ AAO Scripts into AAO using the "CRJ_AxisAndOhsScripts.xml" (scripting --> import scripts)
 
 Import the StreamDeck profile for the CRJ (double click on "CRJ.streamDeckProfile")
 
-Streamdeck Screenshots
+<b>Streamdeck Screenshots</b>
 
 ![alt text](https://github.com/bam2000/CRJAxisAndOhsStreamdeck/blob/02b97b653ddaca660e71c51cee65856b1911d846/_Screenshots/Home.PNG)
 
