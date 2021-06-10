@@ -5,7 +5,7 @@ Aerosoft CRJ 700 Streamdeck and Axis and Ohs Scripts
 This are my Scripts for the Aerosoft CRJ 700/550 and maybe also 900/1000 These Scripts and Templates are working for the following Hardware
 
     Behringer X-Touch Mini
-    Emuteq GNS53
+    Emuteq GNS530
     Elgato StreamDeck XL
     Honeycomb Alpha Yoke
     Honeycomb Bravo Throttle
