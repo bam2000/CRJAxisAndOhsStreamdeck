@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScriptList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <scripts>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>APU STOP</label>
+      <script>10 (&gt;L:ASCRJ_APU_STARTSTOP_ANIM, Number) 0 (&gt;L:ASCRJ_APU_STARTSTOP, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_APU_STARTSTOP_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>APU START</label>
+      <script>10 (&gt;L:ASCRJ_APU_STARTSTOP_ANIM, Number) 1 (&gt;L:ASCRJ_APU_STARTSTOP, Number) (SLEEP:250) 1 (&gt;L:ASCRJ_APU_STARTSTOP_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>ENG R START</label>
+      <script>10 (&gt;L:ASCRJ_ENGS_START_R_ANIM, Number) 1 (&gt;L:ASCRJ_ENGS_START_R, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_ENGS_START_R_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>ENG L START</label>
+      <script>10 (&gt;L:ASCRJ_ENGS_START_L_ANIM, Number) 1 (&gt;L:ASCRJ_ENGS_START_L, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_ENGS_START_L_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>ENG Both Stop</label>
+      <script>10 (&gt;L:ASCRJ_ENGS_STOP_L_ANIM, Number) 1 (&gt;L:ASCRJ_ENGS_STOP_L, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_ENGS_STOP_L_ANIM, Number) 10 (&gt;L:ASCRJ_ENGS_STOP_R_ANIM, Number) 1 (&gt;L:ASCRJ_ENGS_STOP_R, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_ENGS_STOP_R_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>APU FUEL toggle</label>
+      <script>10 (&gt;L:ASCRJ_APU_PWRFUEL_ANIM, Number) 1 (&gt;L:ASCRJ_APU_PWRFUEL, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_APU_PWRFUEL_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>BOOST PMP both off</label>
+      <script>10 (&gt;L:ASCRJ_FUEL_PUMP_L_ANIM, Number) 0 (&gt;L:ASCRJ_FUEL_PUMP_L, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_FUEL_PUMP_L_ANIM, Number) (SLEEP:100)10 (&gt;L:ASCRJ_FUEL_PUMP_R_ANIM, Number) 0 (&gt;L:ASCRJ_FUEL_PUMP_R, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_FUEL_PUMP_R_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>BOOST PMP both on</label>
+      <script>10 (&gt;L:ASCRJ_FUEL_PUMP_L_ANIM, Number) 1 (&gt;L:ASCRJ_FUEL_PUMP_L, Number) (SLEEP:250) 1 (&gt;L:ASCRJ_FUEL_PUMP_L_ANIM, Number) 10 (&gt;L:ASCRJ_FUEL_PUMP_R_ANIM, Number) 1 (&gt;L:ASCRJ_FUEL_PUMP_R, Number) (SLEEP:250) 1 (&gt;L:ASCRJ_FUEL_PUMP_R_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>XFlow Auto OVRD Manual</label>
+      <script>1 (&gt;L:ASCRJ_FUEL_XFLOW_OVRD, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>XFlow Auto OVRD Auto</label>
+      <script>0 (&gt;L:ASCRJ_FUEL_XFLOW_OVRD, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>AC toggle</label>
+      <script>1 (L:CRJAC) - (&gt;L:CRJAC) (L:CRJAC) 0 == if{ 1 (&gt;K:0 - CRJ OVHD-AC on) } els{ 1 (&gt;K:0 - CRJ OVHD-AC off) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>AC off</label>
+      <script>10 (&gt;L:ASCRJ_ELEC_GPU_ANIM, Number) 0 (&gt;L:ASCRJ_ELEC_GPU, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_ELEC_GPU_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>AC on</label>
+      <script>10 (&gt;L:ASCRJ_ELEC_GPU_ANIM, Number) 1 (&gt;L:ASCRJ_ELEC_GPU, Number) (SLEEP:250) 1 (&gt;L:ASCRJ_ELEC_GPU_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>APU toggle</label>
+      <script>1 (L:CRJAPUS) - (&gt;L:CRJAPUS) (L:CRJAPUS) 0 == if{ 1 (&gt;K:0 - CRJ OVHD-APU START) } els{ 1 (&gt;K:0 - CRJ OVHD-APU STOP) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>BLEED SRC toggle</label>
+      <script>(L:ASCRJ_AIR_BLEED_SOURCE, Number) 1 == if{ 3 (&gt;L:ASCRJ_AIR_BLEED_SOURCE, Number) } els{ 1 (&gt;L:ASCRJ_AIR_BLEED_SOURCE, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>BOOST PMP L off</label>
+      <script>10 (&gt;L:ASCRJ_FUEL_PUMP_L_ANIM, Number) 0 (&gt;L:ASCRJ_FUEL_PUMP_L, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_FUEL_PUMP_L_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>BOOST PMP L on</label>
+      <script>10 (&gt;L:ASCRJ_FUEL_PUMP_L_ANIM, Number) 1 (&gt;L:ASCRJ_FUEL_PUMP_L, Number) (SLEEP:250) 1 (&gt;L:ASCRJ_FUEL_PUMP_L_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>BOOST PMP L toggle</label>
+      <script>1 (L:CRJBPL) - (&gt;L:CRJBPL) (L:CRJBPL) 0 == if{ 1 (&gt;K:0 - CRJ OVHD-BOOST PMP L on) } els{ 1 (&gt;K:0 - CRJ OVHD-BOOST PMP L off) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>BOOST PMP R off</label>
+      <script>10 (&gt;L:ASCRJ_FUEL_PUMP_R_ANIM, Number) 0 (&gt;L:ASCRJ_FUEL_PUMP_R, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_FUEL_PUMP_R_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>BOOST PMP R on</label>
+      <script>10 (&gt;L:ASCRJ_FUEL_PUMP_R_ANIM, Number) 1 (&gt;L:ASCRJ_FUEL_PUMP_R, Number) (SLEEP:250) 1 (&gt;L:ASCRJ_FUEL_PUMP_R_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>BOOST PMP R toggle</label>
+      <script>1 (L:CRJBPR) - (&gt;L:CRJBPR) (L:CRJBPR) 0 == if{ 1 (&gt;K:0 - CRJ OVHD-BOOST PMP R on) } els{ 1 (&gt;K:0 - CRJ OVHD-BOOST PMP R off) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>HYD 1 toggle</label>
+      <script>(L:ASCRJ_HYDR_PUMP_1, Number) 1 == if{ 2 (&gt;L:ASCRJ_HYDR_PUMP_1, Number) } els{ 1 (&gt;L:ASCRJ_HYDR_PUMP_1, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>HYD 2 off</label>
+      <script>1 (&gt;L:ASCRJ_HYDR_PUMP_2, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>HYD 2 on</label>
+      <script>2 (&gt;L:ASCRJ_HYDR_PUMP_2, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>HYD 2 toggle</label>
+      <script>1 (L:CRJHYD2) - (&gt;L:CRJHYD2) (L:CRJHYD2) 0 == if{ 1 (&gt;K:0 - CRJ OVHD-HYD 2 on) } els{ 1 (&gt;K:0 - CRJ OVHD-HYD 2 off) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>HYD 3A toggle</label>
+      <script>1 (L:ASCRJ_HYDR_PUMP_3A, Number) - (&gt;L:ASCRJ_HYDR_PUMP_3A, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>HYD 3B toggle</label>
+      <script>(L:ASCRJ_HYDR_PUMP_3B, Number) 1 == if{ 2 (&gt;L:ASCRJ_HYDR_PUMP_3B, Number) } els{ 1 (&gt;L:ASCRJ_HYDR_PUMP_3B, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>Recirc Fan Toggle</label>
+      <script>1 (L:ASCRJ_AIRC_RECIRC_FAN, Number) - (&gt;L:ASCRJ_AIRC_RECIRC_FAN, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>HYD 3A off</label>
+      <script>0 (&gt;L:ASCRJ_HYDR_PUMP_3A, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>HYD 3A on</label>
+      <script>1 (&gt;L:ASCRJ_HYDR_PUMP_3A, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>HYD All off</label>
+      <script>1 (&gt;L:ASCRJ_HYDR_PUMP_1, Number) 1 (&gt;L:ASCRJ_HYDR_PUMP_2, Number) 0 (&gt;L:ASCRJ_HYDR_PUMP_3A, Number) 1 (&gt;L:ASCRJ_HYDR_PUMP_3B, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>HYD All Auto and on</label>
+      <script>2 (&gt;L:ASCRJ_HYDR_PUMP_1, Number) 2 (&gt;L:ASCRJ_HYDR_PUMP_2, Number) 2 (&gt;L:ASCRJ_HYDR_PUMP_3B, Number) (SLEEP:250) 1 (&gt;L:ASCRJ_HYDR_PUMP_3A, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>Isol Toggle</label>
+      <script>(L:ASCRJ_AIR_BLEED_SOURCE_ISOL, Number) 0 == if{ 1 (&gt;L:ASCRJ_AIR_BLEED_SOURCE_ISOL, Number) } els{ 0 (&gt;L:ASCRJ_AIR_BLEED_SOURCE_ISOL, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>Windshld both toggle</label>
+      <script>(L:ASCRJ_AICE_WSHLD_L, Number) 2 &gt;= if{ 0 } els{ (L:ASCRJ_AICE_WSHLD_L, Number) ++ } (&gt;L:ASCRJ_AICE_WSHLD_L, Number) (L:ASCRJ_AICE_WSHLD_R, Number) 2 &gt;= if{ 0 } els{ (L:ASCRJ_AICE_WSHLD_R, Number) ++ } (&gt;L:ASCRJ_AICE_WSHLD_R, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>XFlow OVRD Toggle</label>
+      <script>1 (L:ASCRJ_FUEL_XFLOW_OVRD, Number) - (&gt;L:ASCRJ_FUEL_XFLOW_OVRD, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>ELT Toggle</label>
+      <script>1 (L:ASCRJ_OVHD_ELT, Number) - (&gt;L:ASCRJ_OVHD_ELT, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>BLEED Valves toggle</label>
+      <script>(L:ASCRJ_AIR_BLEED_VALVES, Number) 1 == if{ 3 (&gt;L:ASCRJ_AIR_BLEED_VALVES, Number) } els{ 1 (&gt;L:ASCRJ_AIR_BLEED_VALVES, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>Airc_Pack_both_off</label>
+      <script>10 (&gt;L:ASCRJ_AIRC_PACK_R_ANIM, Number) 0 (&gt;L:ASCRJ_AIRC_PACK_R, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_AIRC_PACK_R_ANIM, Number) (SLEEP:250) 10 (&gt;L:ASCRJ_AIRC_PACK_L_ANIM, Number) 0 (&gt;L:ASCRJ_AIRC_PACK_L, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_AIRC_PACK_L_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>Airc_Pack_both_on</label>
+      <script>10 (&gt;L:ASCRJ_AIRC_PACK_R_ANIM, Number) 1 (&gt;L:ASCRJ_AIRC_PACK_R, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_AIRC_PACK_R_ANIM, Number) (SLEEP:250) 10 (&gt;L:ASCRJ_AIRC_PACK_L_ANIM, Number) 1 (&gt;L:ASCRJ_AIRC_PACK_L, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_AIRC_PACK_L_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>Cont Ignition</label>
+      <script>10 (&gt;L:ASCRJ_ENGS_CONT_IGN_ANIM, Number) 1(&gt;L:ASCRJ_ENGS_CONT_IGN, Number) (SLEEP:100) 0 (&gt;L:ASCRJ_ENGS_CONT_IGN_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>EmergencyLights toggle</label>
+      <script>(L:ASCRJ_OVHD_EMER_LTS, Number) 1 == if{ 0 (&gt;L:ASCRJ_OVHD_EMER_LTS, Number) } els{ 1 (&gt;L:ASCRJ_OVHD_EMER_LTS, Number) } (Sleep:150) (L:ASCRJ_OVHD_EMER_LTS, Number) 0 == if{ 0 (&gt;MIDI:3:NoteOn:1:5) } els{ 1 (&gt;MIDI:3:NoteOn:1:5) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>Belt toggle</label>
+      <script>(L:ASCRJ_OVHD_SEAT_BELTS, Number) 1 == if{ 2 (&gt;L:ASCRJ_OVHD_SEAT_BELTS, Number) } els{ 1 (&gt;L:ASCRJ_OVHD_SEAT_BELTS, Number) } (Sleep:150) (L:ASCRJ_OVHD_SEAT_BELTS, Number) 2 == if{ 0 (&gt;MIDI:3:NoteOn:1:3) } els{ 1 (&gt;MIDI:3:NoteOn:1:3) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>NoSmoking toggle</label>
+      <script>(L:ASCRJ_OVHD_NO_SMOKING, Number) 1 == if{ 2 (&gt;L:ASCRJ_OVHD_NO_SMOKING, Number) } els{ 1 (&gt;L:ASCRJ_OVHD_NO_SMOKING, Number) } (SLEEP:150) (L:ASCRJ_OVHD_NO_SMOKING, Number) 2 == if{ 0 (&gt;MIDI:3:NoteOn:1:4) } els{ 1 (&gt;MIDI:3:NoteOn:1:4) } </script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>Smoking Toggle </label>
+      <script>(L:ASCRJ_OVHD_NO_SMOKING, Number) 2 &gt;= if{ 1 } els{ (L:ASCRJ_OVHD_NO_SMOKING, Number) ++ } (&gt;L:ASCRJ_OVHD_NO_SMOKING, Number) (Sleep:150) (L:ASCRJ_OVHD_NO_SMOKING, Number) 1 == if{ 1 (&gt;MIDI:3:NoteOn:1:4) } els{ 0 (&gt;MIDI:3:NoteOn:1:4) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>Landing Elevation Increase</label>
+      <script>1 (&gt;L:ASCRJ_PRESS_LDG_ELEV_CHANGE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>Landing Elevation decrease</label>
+      <script>-1 (&gt;L:ASCRJ_PRESS_LDG_ELEV_CHANGE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>ENG R STOP</label>
+      <script>10 (&gt;L:ASCRJ_ENGS_STOP_R_ANIM, Number) 1 (&gt;L:ASCRJ_ENGS_STOP_R, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_ENGS_STOP_R_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ OVHD</group>
+      <label>ENG L STOP</label>
+      <script>10 (&gt;L:ASCRJ_ENGS_STOP_L_ANIM, Number) 1 (&gt;L:ASCRJ_ENGS_STOP_L, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_ENGS_STOP_L_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>YD both toggle</label>
+      <script>1 (&gt;K:0 - CRJ PED-YAW1 toggle) (SLEEP:100) 1 (&gt;K:0 - CRJ PED-YAW2 toggle)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>IRS both toggle</label>
+      <script>1 (L:CRJIRSR) - (&gt;L:CRJIRSR) (L:CRJIRSR) 0 == if{ 1 (&gt;K:0 - CRJ PED-IRS R nav) } els{ 1 (&gt;K:0 - CRJ PED-IRS R off) } 1 (L:CRJIRSL) - (&gt;L:CRJIRSL) (L:CRJIRSL) 0 == if{ 1 (&gt;K:0 - CRJ PED-IRS L nav) } els{ 1 (&gt;K:0 - CRJ PED-IRS L off) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>STAB Trim Both on</label>
+      <script>1 (&gt;L:ASCRJ_STAB_TRIM_CH1_BTN_ANIM, Number) 1 (&gt;L:ASCRJ_STAB_TRIM_CH1_TRIGGER, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_STAB_TRIM_CH1_BTN_ANIM, Number) 1 (&gt;L:ASCRJ_STAB_TRIM_CH2_BTN_ANIM, Number) 1 (&gt;L:ASCRJ_STAB_TRIM_CH2_TRIGGER, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_STAB_TRIM_CH2_BTN_ANIM, Number) </script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>MACH TRIM toggle</label>
+      <script>10 (&gt;L:ASCRJ_MACH_TRIM_BTN_ANIM, Number) 1 (&gt;L:ASCRJ_MACH_TRIM, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_MACH_TRIM_BTN_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>Squawk off</label>
+      <script>1 (&gt;L:ASCRJ_XPDR_ATC_SEL, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>Squawk on</label>
+      <script>0 (&gt;L:ASCRJ_XPDR_ATC_SEL, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>IRS L att</label>
+      <script>2 (&gt;L:ASCRJ_IRS1_KNOB, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>IRS L nav</label>
+      <script>1 (&gt;L:ASCRJ_IRS1_KNOB, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>IRS L off</label>
+      <script>0 (&gt;L:ASCRJ_IRS1_KNOB, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>IRS L toggle</label>
+      <script>1 (L:CRJIRSL) - (&gt;L:CRJIRSL) (L:CRJIRSL) 0 == if{ 1 (&gt;K:0 - CRJ PED-IRS L nav) } els{ 1 (&gt;K:0 - CRJ PED-IRS L off) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>IRS R att</label>
+      <script>2 (&gt;L:ASCRJ_IRS2_KNOB, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>IRS R nav</label>
+      <script>1 (&gt;L:ASCRJ_IRS2_KNOB, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>IRS R off</label>
+      <script>0 (&gt;L:ASCRJ_IRS2_KNOB, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>IRS R toggle</label>
+      <script>1 (L:CRJIRSR) - (&gt;L:CRJIRSR) (L:CRJIRSR) 0 == if{ 1 (&gt;K:0 - CRJ PED-IRS R nav) } els{ 1 (&gt;K:0 - CRJ PED-IRS R off) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>THRTL L idle</label>
+      <script>400 (&gt;L:ASCRJ_TQ_THROTTLE_1_POS, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>THRTL L shut</label>
+      <script>500 (&gt;L:ASCRJ_TQ_THROTTLE_1_POS, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>THRTL L toggle</label>
+      <script>1 (L:CRJTH1) - (&gt;L:CRJTH1) (L:CRJTH1) 0 == if{ 1 (&gt;K:0 - CRJ PED-THRTL L idle) } els{ 1 (&gt;K:0 - CRJ PED-THRTL L shut) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>THRTL R idle</label>
+      <script>400 (&gt;L:ASCRJ_TQ_THROTTLE_2_POS, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>THRTL R shut</label>
+      <script>500 (&gt;L:ASCRJ_TQ_THROTTLE_2_POS, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>THRTL R toggle</label>
+      <script>1 (L:CRJTH2) - (&gt;L:CRJTH2) (L:CRJTH2) 0 == if{ 1 (&gt;K:0 - CRJ PED-THRTL R idle) } els{ 1 (&gt;K:0 - CRJ PED-THRTL R shut) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>YAW1 toggle</label>
+      <script>10 (&gt;L:ASCRJ_YD1_BTN_ANIM, Number) 1 (&gt;L:ASCRJ_YD1, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_YD1_BTN_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>YAW2 toggle</label>
+      <script>10 (&gt;L:ASCRJ_YD2_BTN_ANIM, Number) 1 (&gt;L:ASCRJ_YD2, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_YD2_BTN_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>ATC SEL 1</label>
+      <script>0 (&gt;L:ASCRJ_XPDR_ATC_SEL, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>ATC SEL STBY</label>
+      <script>1 (&gt;L:ASCRJ_XPDR_ATC_SEL, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>XPDR STBY ON Toggle</label>
+      <script> (L:ASCRJ_XPDR_MODE, Number) 1 == if{ 2 (&gt;L:ASCRJ_XPDR_MODE, Number) } els{ 1 (&gt;L:ASCRJ_XPDR_MODE, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>XPDR STBY off</label>
+      <script>0 (&gt;L:ASCRJ_XPDR_MODE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>Engine Sync</label>
+      <script>(L:ASCRJ_ENG_SYNC, Number) 2 &gt;= if{ 0 } els{ (L:ASCRJ_ENG_SYNC, Number) ++ } (&gt;L:ASCRJ_ENG_SYNC, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>Lamp Test Toggle</label>
+      <script>1 (L:ASCRJ_ENG_LAMPTEST, Number) - (&gt;L:ASCRJ_ENG_LAMPTEST, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>IND LTS Toggle</label>
+      <script>1 (L:ASCRJ_ENG_INDLTS, Number) - (&gt;L:ASCRJ_ENG_INDLTS, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>ATC Toggle</label>
+      <script>1 (L:ASCRJ_XPDR_ATC_SEL, Number) - (&gt;L:ASCRJ_XPDR_ATC_SEL, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>WX Radar Knob</label>
+      <script>(L:ASCRJ_WXR1_MODE, Number) 3 &gt;= if{ 0 } els{ (L:ASCRJ_WXR1_MODE, Number) ++ } (&gt;L:ASCRJ_WXR1_MODE, Number) </script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>Standby Coms Toggle</label>
+      <script>(L:ASCRJ_XPDR_MODE, Number) 3 &gt;= if{ 0 } els{ (L:ASCRJ_XPDR_MODE, Number) ++ } (&gt;L:ASCRJ_XPDR_MODE, Number) </script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>ATC Switch Toggle</label>
+      <script>(L:ASCRJ_XPDR_ATC_SEL, Number) 2 &gt;= if{ 0 } els{ (L:ASCRJ_XPDR_ATC_SEL, Number) ++ } (&gt;L:ASCRJ_XPDR_ATC_SEL, Number) </script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>GND Spoiler Mode Selector</label>
+      <script>(L:ASCRJ_TQ_SPLR_MODE, Number) 2 &gt;= if{ 0 } els{ (L:ASCRJ_TQ_SPLR_MODE, Number) ++ } (&gt;L:ASCRJ_TQ_SPLR_MODE, Number) </script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>FDD Toggle</label>
+      <script>(L:ASCRJ_FDD_MODE, Number) 2 &gt;= if{ 0 } els{ (L:ASCRJ_FDD_MODE, Number) ++ } (&gt;L:ASCRJ_FDD_MODE, Number) </script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>arm_reversers</label>
+      <script>1 (&gt;L:ASCRJ_TQ_REV1_MODE, Number) 1 (&gt;L:ASCRJ_TQ_REV2_MODE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ PED</group>
+      <label>disarm_reversers</label>
+      <script>0 (&gt;L:ASCRJ_TQ_REV1_MODE, Number) 0 (&gt;L:ASCRJ_TQ_REV2_MODE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>NAV Source dec</label>
+      <script>-1 (&gt;L:ASCRJ_LSP_NAV_SOURCE_CHANGE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>NAV Source inc</label>
+      <script>1 (&gt;L:ASCRJ_LSP_NAV_SOURCE_CHANGE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>MFD BRG2</label>
+      <script>1 (&gt;L:ASCRJ_LSP_BRG2, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>MFD BRG1</label>
+      <script>1 (&gt;L:ASCRJ_LSP_BRG1, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>MFD Format dec</label>
+      <script>-1 (&gt;L:ASCRJ_LSP_FORMAT_CHANGE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>MFD Format inc</label>
+      <script>1 (&gt;L:ASCRJ_LSP_FORMAT_CHANGE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>MFD Range dec</label>
+      <script>-1 (&gt;L:ASCRJ_LSP_RANGE_CHANGE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>MFD Range inc</label>
+      <script>1 (&gt;L:ASCRJ_LSP_RANGE_CHANGE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>CRJ-MDA/DA decrease</label>
+      <script>-1 (&gt;L:ASCRJ_LSP_HEIGHT_SEL_CHANGE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>CRJ-MDA/DA increase</label>
+      <script>1 (&gt;L:ASCRJ_LSP_HEIGHT_SEL_CHANGE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>CRJ-MDA/DA Toggle</label>
+      <script>(L:ASCRJ_LSP_HEIGHT_MODE, Bool) ! (&gt;L:ASCRJ_LSP_HEIGHT_MODE, Bool) 1 (L:ASCRJ_LSP_HEIGHT_MODE, Number) - (&gt;L:ASCRJ_LSP_HEIGHT_MODE, Bool)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>CRJ-MDA/DA push</label>
+      <script>1 (&gt;L:ASCRJ_LSP_HEIGHT_SET, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>Wiper left</label>
+      <script>SIMPROC:(L:ASCRJ_LSP_WIPER, Number) 0 &gt; if{ (L:ASCRJ_LSP_WIPER, Number) -- (&gt;L:ASCRJ_LSP_WIPER) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>Wiper right</label>
+      <script>SIMPROC:(L:ASCRJ_LSP_WIPER, Number) 3 &lt; if{ (L:ASCRJ_LSP_WIPER, Number) ++ (&gt;L:ASCRJ_LSP_WIPER) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>baro_sel_dec</label>
+      <script>(L:ASCRJ_LSP_BARO_CHANGE, Number ) -- (&gt;L:ASCRJ_LSP_BARO_CHANGE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>baro_sel_inc</label>
+      <script>(L:ASCRJ_LSP_BARO_CHANGE, Number ) ++ (&gt;L:ASCRJ_LSP_BARO_CHANGE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>Speed Dec</label>
+      <script>-1 (&gt;L:ASCRJ_LSP_SPEED_SEL_CHANGE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>Speed inc</label>
+      <script>1 (&gt;L:ASCRJ_LSP_SPEED_SEL_CHANGE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EFIS</group>
+      <label>Speed Refs Push</label>
+      <script>1 (&gt;L:ASCRJ_LSP_SPEED_SEL_ANIM, Number) 1 (&gt;L:ASCRJ_LSP_SPEED_SET, Number) (SLEEP:250) 0 (&gt;L:ASCRJ_LSP_SPEED_SEL_ANIM, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EXT LIGHTS</group>
+      <label>LOGO toggle</label>
+      <script>1 (L:ASCRJ_EXTL_LOGO, Number) - (&gt;L:ASCRJ_EXTL_LOGO, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EXT LIGHTS</group>
+      <label>BCN toggle</label>
+      <script>1 (L:ASCRJ_EXTL_BEACON, Bool) - (&gt;L:ASCRJ_EXTL_BEACON, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EXT LIGHTS</group>
+      <label>LNDG L toggle</label>
+      <script>1 (L:ASCRJ_OVHD_LDG_LEFT, Number) - (&gt;L:ASCRJ_OVHD_LDG_LEFT, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EXT LIGHTS</group>
+      <label>LNDG N toggle</label>
+      <script>1 (L:ASCRJ_OVHD_LDG_NOSE, Number) - (&gt;L:ASCRJ_OVHD_LDG_NOSE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EXT LIGHTS</group>
+      <label>LNDG R toggle</label>
+      <script>1 (L:ASCRJ_OVHD_LDG_RIGHT, Number) - (&gt;L:ASCRJ_OVHD_LDG_RIGHT, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EXT LIGHTS</group>
+      <label>NAV toggle</label>
+      <script>1 (L:ASCRJ_EXTL_NAV, Bool) - (&gt;L:ASCRJ_EXTL_NAV, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EXT LIGHTS</group>
+      <label>STRB toggle</label>
+      <script>1 (L:ASCRJ_EXTL_STROBE, Bool) - (&gt;L:ASCRJ_EXTL_STROBE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EXT LIGHTS</group>
+      <label>TAXI toggle</label>
+      <script>1 (L:ASCRJ_OVHD_TAXI, Number) - (&gt;L:ASCRJ_OVHD_TAXI, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ EXT LIGHTS</group>
+      <label>WING toggle</label>
+      <script>1 (A:LIGHT WING, Bool) - (&gt;L:ASCRJ_EXTL_WING, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ECAM</group>
+      <label>PRI</label>
+      <script>1 (&gt;L:ASCRJ_ECAM_PRI, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ECAM</group>
+      <label>STAT</label>
+      <script>1 (&gt;L:ASCRJ_ECAM_STAT, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ECAM</group>
+      <label>ECS</label>
+      <script>1 (&gt;L:ASCRJ_ECAM_ECS, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ECAM</group>
+      <label>HYD</label>
+      <script>1 (&gt;L:ASCRJ_ECAM_HYD, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ECAM</group>
+      <label>ELEC</label>
+      <script>1 (&gt;L:ASCRJ_ECAM_ELEC, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ECAM</group>
+      <label>FUEL</label>
+      <script>1 (&gt;L:ASCRJ_ECAM_FUEL, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ECAM</group>
+      <label>FCTL</label>
+      <script>1 (&gt;L:ASCRJ_ECAM_FCTL, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ECAM</group>
+      <label>AICE</label>
+      <script>1 (&gt;L:ASCRJ_ECAM_AICE, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ECAM</group>
+      <label>DOORS</label>
+      <script>1 (&gt;L:ASCRJ_ECAM_DOORS, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ECAM</group>
+      <label>CAS</label>
+      <script>1 (&gt;L:ASCRJ_ECAM_CAS, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ECAM</group>
+      <label>SEL</label>
+      <script>1 (&gt;L:ASCRJ_ECAM_SEL, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ECAM</group>
+      <label>MENU</label>
+      <script>1 (&gt;L:ASCRJ_ECAM_MENU, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ECAM</group>
+      <label>UP</label>
+      <script>1 (&gt;L:ASCRJ_ECAM_UP, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ECAM</group>
+      <label>DOWN</label>
+      <script>1 (&gt;L:ASCRJ_ECAM_DOWN, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ECAM</group>
+      <label>STEP</label>
+      <script>1 (&gt;L:ASCRJ_ECAM_STEP, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ECAM</group>
+      <label>BLANK</label>
+      <script>1 (&gt;L:ASCRJ_ECAM_BLANK, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ XPDR</group>
+      <label>XPDR_READ</label>
+      <script>(A:TRANSPONDER CODE:1, Number) s0 l0 1000 / flr (&gt;L:XPDR_1000) l0 1000 % 100 / flr (&gt;L:XPDR_100) l0 100 % 10 / flr (&gt;L:XPDR_10) l0 10 % flr (&gt;L:XPDR_1)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ XPDR</group>
+      <label>XPDR_1_DN</label>
+      <script>(L:XPDR_1) 0 &gt; if{ (L:XPDR_1) -- } els{ 7 } (&gt;L:XPDR_1) 1 (&gt;K:0 - CRJ XPDR-XPDR_WRITE)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ XPDR</group>
+      <label>XPDR_1_UP</label>
+      <script>(L:XPDR_1) 7 &lt; if{ (L:XPDR_1) ++ } els{ 0 } (&gt;L:XPDR_1) 1 (&gt;K:0 - CRJ XPDR-XPDR_WRITE)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ XPDR</group>
+      <label>XPDR_10_DN</label>
+      <script>(L:XPDR_10) 0 &gt; if{ (L:XPDR_10) -- } els{ 7 } (&gt;L:XPDR_10) 1 (&gt;K:0 - CRJ XPDR-XPDR_WRITE)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ XPDR</group>
+      <label>XPDR_10_UP</label>
+      <script>(L:XPDR_10) 7 &lt; if{ (L:XPDR_10) ++ } els{ 0 } (&gt;L:XPDR_10) 1 (&gt;K:0 - CRJ XPDR-XPDR_WRITE)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ XPDR</group>
+      <label>XPDR_100_DN</label>
+      <script>(L:XPDR_100) 0 &gt; if{ (L:XPDR_100) -- } els{ 7 } (&gt;L:XPDR_100) 1 (&gt;K:0 - CRJ XPDR-XPDR_WRITE)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ XPDR</group>
+      <label>XPDR_100_UP</label>
+      <script>(L:XPDR_100) 7 &lt; if{ (L:XPDR_100) ++ } els{ 0 } (&gt;L:XPDR_100) 1 (&gt;K:0 - CRJ XPDR-XPDR_WRITE)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ XPDR</group>
+      <label>XPDR_1000_DN</label>
+      <script>(L:XPDR_1000) 0 &gt; if{ (L:XPDR_1000) -- } els{ 7 } (&gt;L:XPDR_1000) 1 (&gt;K:0 - CRJ XPDR-XPDR_WRITE)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ XPDR</group>
+      <label>XPDR_1000_UP</label>
+      <script>(L:XPDR_1000) 7 &lt; if{ (L:XPDR_1000) ++ } els{ 0 } (&gt;L:XPDR_1000) 1 (&gt;K:0 - CRJ XPDR-XPDR_WRITE)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ XPDR</group>
+      <label>XPDR_WRITE</label>
+      <script>(L:XPDR_1000) 1000 * (L:XPDR_100) 100 * + (L:XPDR_10) 10 * + (L:XPDR_1) + dec2b16 (&gt;K:XPNDR_SET)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE COWL L off</label>
+      <script>0 (&gt;L:ASCRJ_AICE_COWL_L, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE COWL L on</label>
+      <script>1 (&gt;L:ASCRJ_AICE_COWL_L, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE COWL L toggle</label>
+      <script>(L:ASCRJ_AICE_COWL_L, Number) ! (&gt;L:ASCRJ_AICE_COWL_L, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE COWL R off</label>
+      <script>0 (&gt;L:ASCRJ_AICE_COWL_R, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE COWL R on</label>
+      <script>1 (&gt;L:ASCRJ_AICE_COWL_R, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE COWL R toggle</label>
+      <script>(L:ASCRJ_AICE_COWL_R, Number) ! (&gt;L:ASCRJ_AICE_COWL_R, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE PROBE L off</label>
+      <script>0 (&gt;L:ASCRJ_AICE_PHEAT_L, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE PROBE L on</label>
+      <script>1 (&gt;L:ASCRJ_AICE_PHEAT_L, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE PROBE L toggle</label>
+      <script>1 (L:CRJPHEATL) - (&gt;L:CRJPHEATL) (L:CRJPHEATL) 0 == if{ 1 (&gt;K:0 - CRJ ANTI ICE-ICE PROBE L on) } els{ 1 (&gt;K:0 - CRJ ANTI ICE-ICE PROBE L off) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE PROBE R off</label>
+      <script>0 (&gt;L:ASCRJ_AICE_PHEAT_R, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE PROBE R on</label>
+      <script>1 (&gt;L:ASCRJ_AICE_PHEAT_R, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE PROBE R toggle</label>
+      <script>1 (L:CRJPHEATR) - (&gt;L:CRJPHEATR) (L:CRJPHEATR) 0 == if{ 1 (&gt;K:0 - CRJ ANTI ICE-ICE PROBE R on) } els{ 1 (&gt;K:0 - CRJ ANTI ICE-ICE PROBE R off) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE WING toggle</label>
+      <script>(L:ASCRJ_AICE_WING, Number) ! (&gt;L:ASCRJ_AICE_WING, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE WNDSH L hi</label>
+      <script>2 (&gt;L:ASCRJ_AICE_WSHLD_L, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE WNDSH L low</label>
+      <script>1 (&gt;L:ASCRJ_AICE_WSHLD_L, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE WNDSH L off</label>
+      <script>0 (&gt;L:ASCRJ_AICE_WSHLD_L, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE WNDSH L toggle</label>
+      <script>1 (L:CRJWNDSL) - (&gt;L:CRJWNDSL) (L:CRJWNDSL) 0 == if{ 1 (&gt;K:0 - CRJ ANTI ICE-ICE WNDSH L low) } els{ 1 (&gt;K:0 - CRJ ANTI ICE-ICE WNDSH L off) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE WNDSH R hi</label>
+      <script>2 (&gt;L:ASCRJ_AICE_WSHLD_R, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE WNDSH R low</label>
+      <script>1 (&gt;L:ASCRJ_AICE_WSHLD_R, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE WNDSH R off</label>
+      <script>0 (&gt;L:ASCRJ_AICE_WSHLD_R, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE WNDSH R toggle</label>
+      <script>1 (L:CRJWNDSR) - (&gt;L:CRJWNDSR) (L:CRJWNDSR) 0 == if{ 1 (&gt;K:0 - CRJ ANTI ICE-ICE WNDSH R low) } els{ 1 (&gt;K:0 - CRJ ANTI ICE-ICE WNDSH R off) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE WNDSH both off</label>
+      <script>0 (&gt;L:ASCRJ_AICE_WSHLD_L, Number) 0 (&gt;L:ASCRJ_AICE_WSHLD_R, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE WNDSH both toggle</label>
+      <script>(L:ASCRJ_AICE_WSHLD_L, Number) 1 == if{ 2 (&gt;L:ASCRJ_AICE_WSHLD_L, Number) } els{ 1 (&gt;L:ASCRJ_AICE_WSHLD_L, Number) } (L:ASCRJ_AICE_WSHLD_R, Number) 1 == if{ 2 (&gt;L:ASCRJ_AICE_WSHLD_R, Number) } els{ 1 (&gt;L:ASCRJ_AICE_WSHLD_R, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE COWL both off</label>
+      <script>0 (&gt;L:ASCRJ_AICE_COWL_L, Number) 0 (&gt;L:ASCRJ_AICE_COWL_R, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>ICE COWL both on</label>
+      <script>1 (&gt;L:ASCRJ_AICE_COWL_L, Number) 1 (&gt;L:ASCRJ_AICE_COWL_R, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>probe_heat_off</label>
+      <script>0 (&gt;L:ASCRJ_AICE_PHEAT_L, Number) 0 (&gt;L:ASCRJ_AICE_PHEAT_R, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ ANTI ICE</group>
+      <label>probe_heat_on</label>
+      <script>1 (&gt;L:ASCRJ_AICE_PHEAT_L, Number) 1 (&gt;L:ASCRJ_AICE_PHEAT_R, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>ALL DISPL dec</label>
+      <script>1 (&gt;K:0 - CRJ INT LGT SIGNS-LSP DISPL dec) (SLEEP:100) 1 (&gt;K:0 - CRJ INT LGT SIGNS-RSP DISPL dec) (SLEEP:100) 1 (&gt;K:0 - CRJ INT LGT SIGNS-PED DISPL dec)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>ALL DISPL inc</label>
+      <script>1 (&gt;K:0 - CRJ INT LGT SIGNS-LSP DISPL inc) (SLEEP:100) 1 (&gt;K:0 - CRJ INT LGT SIGNS-RSP DISPL inc) (SLEEP:100) 1 (&gt;K:0 - CRJ INT LGT SIGNS-PED DISPL inc)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>ALL LSP RSP INTEG dec</label>
+      <script>1 (&gt;K:0 - CRJ INT LGT SIGNS-LSP INTEG dec) (SLEEP:100) 1 (&gt;K:0 - CRJ INT LGT SIGNS-RSP INTEG dec)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>ALL LSP RSP INTEG inc</label>
+      <script>1 (&gt;K:0 - CRJ INT LGT SIGNS-LSP INTEG inc) (SLEEP:100) 1 (&gt;K:0 - CRJ INT LGT SIGNS-RSP INTEG inc)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>ALL PED OVHD INTEG dec</label>
+      <script>1 (&gt;K:0 - CRJ INT LGT SIGNS-OVHD INTEG dec) (SLEEP:100) 1 (&gt;K:0 - CRJ INT LGT SIGNS-PED INTEG dec)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>ALL PED OVHD INTEG inc</label>
+      <script>1 (&gt;K:0 - CRJ INT LGT SIGNS-OVHD INTEG inc) (SLEEP:100) 1 (&gt;K:0 - CRJ INT LGT SIGNS-PED INTEG inc)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>CB PNL dec</label>
+      <script>(L:ASCRJ_INTL_CB_PNL_BRT, Number) -- s0 l0 0 &gt; if{ l0 (&gt;L:ASCRJ_INTL_CB_PNL_BRT, Number) } </script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>CB PNL inc</label>
+      <script>(L:ASCRJ_INTL_CB_PNL_BRT, Number) ++ s0 l0 27 &lt; if{ l0 (&gt;L:ASCRJ_INTL_CB_PNL_BRT, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>EMER toggle</label>
+      <script>(L:ASCRJ_OVHD_EMER_LTS, Number) ! (&gt;L:ASCRJ_OVHD_EMER_LTS, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>ISI DISPL dec</label>
+      <script>1 (&gt;L:ASCRJ_ISI_MINUS, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>ISI DISPL inc</label>
+      <script>1 (&gt;L:ASCRJ_ISI_PLUS, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>LSP DISPL dec</label>
+      <script>(L:ASCRJ_LSP_DSPL, Number) -- s0 l0 0 &gt; if{ l0 (&gt;L:ASCRJ_LSP_DSPL, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>LSP DISPL inc</label>
+      <script>(L:ASCRJ_LSP_DSPL, Number) ++ s0 l0 27 &lt; if{ l0 (&gt;L:ASCRJ_LSP_DSPL, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>LSP FLOOD dec</label>
+      <script>(L:ASCRJ_LSP_FLOOD, Number) -- s0 l0 -1 &gt; if{ l0 (&gt;L:ASCRJ_LSP_FLOOD, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>LSP FLOOD inc</label>
+      <script>(L:ASCRJ_LSP_FLOOD, Number) ++ s0 l0 27 &lt; if{ l0 (&gt;L:ASCRJ_LSP_FLOOD, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>LSP INTEG dec</label>
+      <script>(L:ASCRJ_LSP_INTEG, Number) -- s0 l0 -1 &gt; if{ l0 (&gt;L:ASCRJ_LSP_INTEG, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>LSP INTEG inc</label>
+      <script>(L:ASCRJ_LSP_INTEG, Number) ++ s0 l0 27 &lt; if{ l0 (&gt;L:ASCRJ_LSP_INTEG, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>OVHD INTEG dec</label>
+      <script>(L:ASCRJ_INTL_OVHD, Number) -- s0 l0 0 &gt; if{ l0 (&gt;L:ASCRJ_INTL_OVHD, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>OVHD INTEG inc</label>
+      <script>(L:ASCRJ_INTL_OVHD, Number) ++ s0 l0 27 &lt; if{ l0 (&gt;L:ASCRJ_INTL_OVHD, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>PED DISPL dec</label>
+      <script>(L:ASCRJ_INTL_DSPL_BRT, Number) -- s0 l0 0 &gt; if{ l0 (&gt;L:ASCRJ_INTL_DSPL_BRT, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>PED DISPL inc</label>
+      <script>(L:ASCRJ_INTL_DSPL_BRT, Number) ++ s0 l0 27 &lt; if{ l0 (&gt;L:ASCRJ_INTL_DSPL_BRT, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>PED FLOOD dec</label>
+      <script>(L:ASCRJ_INTL_FLOOD_BRT, Number) -- s0 l0 -1 &gt; if{ l0 (&gt;L:ASCRJ_INTL_FLOOD_BRT, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>PED FLOOD inc</label>
+      <script>(L:ASCRJ_INTL_FLOOD_BRT, Number) ++ s0 l0 27 &lt; if{ l0 (&gt;L:ASCRJ_INTL_FLOOD_BRT, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>PED INTEG dec</label>
+      <script>(L:ASCRJ_INTL_INTEG_BRT, Number) -- s0 l0 0 &gt; if{ l0 (&gt;L:ASCRJ_INTL_INTEG_BRT, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>PED INTEG inc</label>
+      <script>(L:ASCRJ_INTL_INTEG_BRT, Number) ++ s0 l0 27 &lt; if{ l0 (&gt;L:ASCRJ_INTL_INTEG_BRT, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>RSP DISPL dec</label>
+      <script>(L:ASCRJ_RSP_DSPL, Number) -- s0 l0 0 &gt; if{ l0 (&gt;L:ASCRJ_RSP_DSPL, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>RSP DISPL inc</label>
+      <script>(L:ASCRJ_RSP_DSPL, Number) ++ s0 l0 27 &lt; if{ l0 (&gt;L:ASCRJ_RSP_DSPL, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>RSP FLOOD dec</label>
+      <script>(L:ASCRJ_RSP_FLOOD, Number) -- s0 l0 -1 &gt; if{ l0 (&gt;L:ASCRJ_RSP_FLOOD, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>RSP FLOOD inc</label>
+      <script>(L:ASCRJ_RSP_FLOOD, Number) ++ s0 l0 27 &lt; if{ l0 (&gt;L:ASCRJ_RSP_FLOOD, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>RSP INTEG dec</label>
+      <script>(L:ASCRJ_RSP_INTEG, Number) -- s0 l0 -1 &gt; if{ l0 (&gt;L:ASCRJ_RSP_INTEG, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>RSP INTEG inc</label>
+      <script>(L:ASCRJ_RSP_INTEG, Number) ++ s0 l0 27 &lt; if{ l0 (&gt;L:ASCRJ_RSP_INTEG, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>SEAT toggle</label>
+      <script>(L:ASCRJ_OVHD_SEAT_BELTS, Bool) ! (&gt;L:ASCRJ_OVHD_SEAT_BELTS, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>SMKG toggle</label>
+      <script>(L:ASCRJ_OVHD_NO_SMOKING, Bool) ! (&gt;L:ASCRJ_OVHD_NO_SMOKING, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>All Panel Lights Inc</label>
+      <script>1 (&gt;K:0 - CRJ INT LGT SIGNS-OVHD INTEG inc) (SLEEP:100) 1 (&gt;K:0 - CRJ INT LGT SIGNS-LSP INTEG inc) (SLEEP:100) 1 (&gt;K:0 - CRJ INT LGT SIGNS-RSP INTEG inc) (SLEEP:100) 1 (&gt;K:0 - CRJ INT LGT SIGNS-PED INTEG inc) (L:ASCRJ_INTL_OVHD, Number) ++ s0 l0 27 &lt; if{ l0 (&gt;L:ASCRJ_INTL_OVHD, Number) } (L:ASCRJ_INTL_INTEG_BRT, Number) ++ s0 l0 27 &lt; if{ l0 (&gt;L:ASCRJ_INTL_INTEG_BRT, Number) } (L:ASCRJ_RSP_INTEG, Number) ++ s0 l0 27 &lt; if{ l0 (&gt;L:ASCRJ_RSP_INTEG, Number) } (L:ASCRJ_LSP_INTEG, Number) ++ s0 l0 27 &lt; if{ l0 (&gt;L:ASCRJ_LSP_INTEG, Number) }</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>Floor Light off</label>
+      <script>0 (&gt;L:ASCRJ_LSP_FLOOR, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>Floor Light on</label>
+      <script>1 (&gt;L:ASCRJ_LSP_FLOOR, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>ALL FLOOD dec old</label>
+      <script>1 (&gt;K:0 - CRJ INT LGT SIGNS-PED FLOOD dec) 1 (&gt;K:0 - CRJ INT LGT SIGNS-LSP FLOOD dec) 1 (&gt;K:0 - CRJ INT LGT SIGNS-RSP FLOOD dec)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>ALL FLOOD on</label>
+      <script>25 (&gt;L:ASCRJ_LSP_FLOOD, Number) 25 (&gt;L:ASCRJ_INTL_FLOOD_BRT, Number) 25 (&gt;L:ASCRJ_RSP_FLOOD, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>ALL FLOOD off</label>
+      <script>0 (&gt;L:ASCRJ_LSP_FLOOD, Number) 0 (&gt;L:ASCRJ_INTL_FLOOD_BRT, Number) 0 (&gt;L:ASCRJ_RSP_FLOOD, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>All INTEG on</label>
+      <script>30 (&gt;L:ASCRJ_LSP_INTEG, Number) 30 (&gt;L:ASCRJ_INTL_INTEG_BRT, Number) 30 (&gt;L:ASCRJ_RSP_INTEG, Number) 30 (&gt;L:ASCRJ_INTL_OVHD, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>All INTEG off</label>
+      <script>0 (&gt;L:ASCRJ_LSP_INTEG, Number) 0 (&gt;L:ASCRJ_INTL_INTEG_BRT, Number) 0 (&gt;L:ASCRJ_RSP_INTEG, Number) 0 (&gt;L:ASCRJ_INTL_OVHD, Number)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>ALL INTEG inc</label>
+      <script>1 (&gt;K:0 - CRJ INT LGT SIGNS-OVHD INTEG inc|4) 1 (&gt;K:0 - CRJ INT LGT SIGNS-LSP INTEG inc|4) 1 (&gt;K:0 - CRJ INT LGT SIGNS-PED INTEG inc|4)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>ALL INTEG dec</label>
+      <script>1 (&gt;K:0 - CRJ INT LGT SIGNS-OVHD INTEG dec|2) 1 (&gt;K:0 - CRJ INT LGT SIGNS-LSP INTEG dec|2) 1 (&gt;K:0 - CRJ INT LGT SIGNS-PED INTEG dec|2)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>ALL FLOOD inc</label>
+      <script>1 (&gt;K:0 - CRJ INT LGT SIGNS-PED FLOOD inc|2) 1 (&gt;K:0 - CRJ INT LGT SIGNS-LSP FLOOD inc|2) 1 (&gt;K:0 - CRJ INT LGT SIGNS-RSP FLOOD inc|2)</script>
+    </Script>
+    <Script>
+      <group>0 - CRJ INT LGT SIGNS</group>
+      <label>ALL FLOOD dec</label>
+      <script>1 (&gt;K:0 - CRJ INT LGT SIGNS-PED FLOOD dec|2) 1 (&gt;K:0 - CRJ INT LGT SIGNS-LSP FLOOD dec|2) 1 (&gt;K:0 - CRJ INT LGT SIGNS-RSP FLOOD dec|2)</script>
+    </Script>
+    <Script>
+      <group>X-Touch Lights</group>
+      <label>X_T_Recognition_Light_4A</label>
+      <script>(A:Light RECOGNITION, Bool) 0 == if{ 0 (&gt;MIDI:3:NoteOn:1:4) } els{ 1 (&gt;MIDI:3:NoteOn:1:4) }</script>
+    </Script>
+    <Script>
+      <group>X-Touch Lights</group>
+      <label>CRJ Seatbelt Sign_3A</label>
+      <script>(L:ASCRJ_OVHD_SEAT_BELTS, Number) 2 == if{ 1 (&gt;MIDI:3:NoteOn:1:3) } els{ 0 (&gt;MIDI:3:NoteOn:1:3) }</script>
+    </Script>
+    <Script>
+      <group>X-Touch Lights</group>
+      <label>CRJ Smoking Sign_4A</label>
+      <script>(L:ASCRJ_OVHD_NO_SMOKING, Number) 2 == if{ 1 (&gt;MIDI:3:NoteOn:1:4) } els{ 0 (&gt;MIDI:3:NoteOn:1:4) }</script>
+    </Script>
+    <Script>
+      <group>X-Touch Lights</group>
+      <label>X_T_SAFETY_Light_3A</label>
+      <script>(L:SAFETY_LIGHT_ON, Bool) 0 == if{ 0 (&gt;MIDI:3:NoteOn:1:4) } els{ 1 (&gt;MIDI:3:NoteOn:1:4) }</script>
+    </Script>
+    <Script>
+      <group>X-Touch Lights</group>
+      <label>CRJ Emergency Sign_5A</label>
+      <script>(L:ASCRJ_OVHD_EMER_LTS, Number) 1 == if{ 0 (&gt;MIDI:3:NoteOn:1:5) } els{ 1 (&gt;MIDI:3:NoteOn:1:5) }</script>
+    </Script>
+  </scripts>
+</ScriptList>
