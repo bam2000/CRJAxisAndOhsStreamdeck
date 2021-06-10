@@ -16,3 +16,16 @@ Special Thanks for Oliver and the great Axis and Ohs Tool ans especialy for answ
 Also Thanks CaptOle, FltsimFlyboy and Guenseli from flightsim.to for some amazing scripts and templates i could use to create this :)
 
 I know this Setup is very special, but maybe you can edit your own creation with it.
+
+
+Streamdeck Screenshots
+
+![alt text](https://github.com/bam2000/CRJAxisAndOhsStreamdeck/blob/02b97b653ddaca660e71c51cee65856b1911d846/_Screenshots/Home.PNG)
+
+![alt text](https://github.com/bam2000/CRJAxisAndOhsStreamdeck/blob/02b97b653ddaca660e71c51cee65856b1911d846/_Screenshots/Overhead.PNG)
+
+![alt text](https://github.com/bam2000/CRJAxisAndOhsStreamdeck/blob/02b97b653ddaca660e71c51cee65856b1911d846/_Screenshots/Pedestral.PNG)
+
+![alt text](https://github.com/bam2000/CRJAxisAndOhsStreamdeck/blob/02b97b653ddaca660e71c51cee65856b1911d846/_Screenshots/123.PNG)
+
+![alt text](https://github.com/bam2000/CRJAxisAndOhsStreamdeck/blob/02b97b653ddaca660e71c51cee65856b1911d846/_Screenshots/ABC.PNG)
