@@ -11,7 +11,7 @@ This are my Scripts for the Aerosoft CRJ 700/550 and maybe also 900/1000 These S
     Honeycomb Bravo Throttle
     Saitek/Logitech Radio Panel
 
-Special Thanks for Oliver and the great Axis and Ohs Tool ans especialy for answering all my questions and giving hints on possible solutions :)
+Special Thanks for Oliver and the great Axis and Ohs Tool and especially for answering all my questions and giving hints on possible solutions :)
 
 Also Thanks CaptOle, FltsimFlyboy and Guenseli from flightsim.to for some amazing scripts and templates i could use to create this :)
 
